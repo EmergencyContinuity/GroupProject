@@ -7,14 +7,24 @@
     <form>
   </head>
   <body class = signupBody >
+    <header>
+      <h1 id="OrgName"> First Up!</h1>
+      <div class="topnav" id="myTopnav">
+        <a href="#AboutUs.html" class="active">About Us</a>
+        <a href="#home.html">Home</a>
+        <a href="#Resource.html">Resource Board</a>
+        <a href="logIn">Log-in/Sign-up</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+        </header>
    <div>
-     <fieldset>
-    <form id = signupForm>
+     <fieldset id="signupForm">
+    <form class="signupForm">
         <legend>Sign Up to First Up</legend>
         <label for="org"> Organization name: </label>
-        <input name="org" type="text" />
+        <input name="org" type="text" /><br>
         <label for="location">Location</label>
-        <input name="location" type="text" />
+        <input name="location" type="text" /><br>
         <label for="email">Email</label>
         <input name="email" type="text" />
         <label for="phone">Phone</label>
@@ -23,7 +33,7 @@
         <input name="orgclass" type="text" />
         <label for="description">Description of Organization</label>
         <input name="description" type="text" />
-        
+
       <button type="submit">Sign Up</button>
     </form>
   </fieldset>
