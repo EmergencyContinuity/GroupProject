@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head class ="signupHeader">
+    <link rel= "stylesheet" href= "signup.css">
     <meta charset="utf-8">
-    <title>Signup</title>
+    <title id= "signupTitle" >Signup</title>
+    <form>
   </head>
-  <body>
+  <body class = signupBody >
+   <div>
+     <fieldset>
+    <form id = signupForm>
+        <legend>Sign Up to First Up</legend>
+        <label for="org"> Organization name: </label>
+        <input name="org" type="text" />
+        <label for="location">Location</label>
+        <input name="location" type="text" />
+        <label for="email">Email</label>
+        <input name="email" type="text" />
+        <label for="phone">Phone</label>
+        <input name="phone" type="text" />
+        <label for="orgclass"> Class of Organization(ie... Non-Profit, Government, Private)</label>
+        <input name="orgclass" type="text" />
+        <label for="description">Description of Organization</label>
+        <input name="description" type="text" />
+        
+      <button type="submit">Sign Up</button>
+    </form>
+  </fieldset>
 
   </body>
 </html>
