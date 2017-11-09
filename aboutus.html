@@ -2,14 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FIRST UP</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
     <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
   </head>
     <body>
-      <video id="my-video" class="video-js" controls preload="auto" width="800" height="500"
-      poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+      <header>
+        <h1 id="OrgName"> FirstUp!</h1>
+        <div class="topnav" id="myTopnav">
+          <a href="#AboutUs.html" class="active">About Us</a>
+          <a href="#home.html">Home</a>
+          <a href="#Resource.html">Resource Board</a>
+          <a href="logIn">Log-in/Sign-up</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+          </header>
+
+      <h1 id="aboutUsHeader">About Us</h1>
+      <h2 id="aboutUsTagLine">We are StepUp - Right now.
+      Helping others.
+      Community of one.
+    </h2>
+      <div id="aboutUsVideo">
+
+
+      <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="800em" height="500em"
+      poster="images/test.jpg" data-setup="{}">
         <source src="images/test.mp4" type='video/mp4'>
         <source src="MY_VIDEO.webm" type='video/webm'>
         <p class="vjs-no-js">
@@ -17,6 +41,34 @@
           <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
         </p>
       </video>
+      </div>
+
+      <div id="aboutUsPics">
+
+      <div class="aboutUsImg">
+        <img src="images/test.jpg" alt="test" height="200em" width="200em"></img>
+      <p class="aboutUsParagraph">this is where some information<br> about us would go if we decide to put any!</p>
+      </div>
+
+      <div class="aboutUsImg">
+        <img src="images/test.jpg" alt="test" height="200em" width="200em"></img>
+      <p class="aboutUsParagraph">this is where some information<br> about us would go if we decide to put any!</p>
+      </div>
+
+      <div class="aboutUsImg">
+        <img src="images/test.jpg" alt="test" height="200em" width="200em"></img>
+      <p class="aboutUsParagraph">this is where some information<br> about us would go if we decide to put any!</p>
+      </div>
+
+      <div class="aboutUsImg">
+        <img src="images/test.jpg" alt="test" height="200em" width="200em"></img>
+      <p class="aboutUsParagraph">this is where some information<br> about us would go if we decide to put any!</p>
+      </div>
+
+    </div>
+
+
+
 
       <script src="http://vjs.zencdn.net/6.2.8/video.js"></script>
     </body>
