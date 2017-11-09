@@ -3,8 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>About Us</title>
+    <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
   </head>
-  <body>
+    <body>
+      <video id="my-video" class="video-js" controls preload="auto" width="800" height="500"
+      poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+        <source src="images/test.mp4" type='video/mp4'>
+        <source src="MY_VIDEO.webm" type='video/webm'>
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+      </video>
 
-  </body>
+      <script src="http://vjs.zencdn.net/6.2.8/video.js"></script>
+    </body>
+
 </html>
