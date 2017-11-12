@@ -11,6 +11,10 @@ window.onclick = function(event) {
 // debugger;
 var allOrganizations = [];
 
+if(allOrganizations.length > 0){
+  var newClicks = JSON.parse(localStorage.newClick);
+}
+
 function Organization(name, address, need) {
   this.name = name;
   this.address = address;
@@ -32,9 +36,10 @@ function addOrganization(event) {
   event.target.address.value = null;
   event.target.need.value = null;
   // event.target.list.value = null;
-
+  localStorage.newClick = JSON.stringify(allOrganizations);
   createDiv();
 }
+
 function createDiv() {
   var papa = document.getElementById('papa');
 
@@ -55,6 +60,7 @@ function createDiv() {
 
   // for(var orgs = 0; orgs < allOrganizations.length; orgs++) {
   papa.appendChild(div);
+  var storage = JSON.parse(localStorage.newClick);
 }
 
 document.getElementById('resourceRequest').addEventListener('submit', addOrganization);
