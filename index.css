@@ -1,36 +1,62 @@
 
 header {
-  background-color: #D72638;
   background: url(https://zenandpi.files.wordpress.com/2015/11/photo-1444664361762-afba083a4d77.jpg?w=825&h=510&crop=1) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   opacity: .8;
+  /*opacity: .8;*/
   height: 300px;
   margin-top: 0px;
   padding-top: 0px;
 }
 
+/*
+font-family: 'Orbitron', sans-serif;
+font-family: 'Concert One', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Bevan', cursive;
+font-family: 'Special Elite', cursive;***MAYBE
+font-family: 'Freckle Face', cursive;
+font-family: 'Ribeye Marrow', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Dosis', sans-serif;*MAYBE
+font-family: 'Gloria Hallelujah', cursive;***MAYBE
+font-family: 'Permanent Marker', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Cabin Sketch', cursive;***MAYBE
+font-family: 'Rancho', cursive;***MAYBE
+font-family: 'Annie Use Your Telescope', cursive;
+font-family: 'The Girl Next Door', cursive;*/
+
 #OrgName {
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 4em;
+  font-family: 'Rancho', cursive;
+  font-size: 7em;
   text-align: center;
   margin-top: 0px;
-  padding-top: 0;
+  padding-top: 0px;
   padding-bottom: 0;
   margin-bottom: 0px;
-  color: #D72638;
-
+  color: #c7293a;
 }
 
+#loginButton {
+  float: right;
+  width: 80px;
+  margin-right: 20px;
+}
 /*nav{
   overflow: auto;
 }*/
 .topnav {
-    background-color: #12355B;
+    background-color: #1f4d7d;
     overflow: hidden;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -65,7 +91,15 @@ header {
   color: white;
 }
 
-
+#papa {
+  border: 4px solid gray;
+  height: 600px;
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /*this section is for aboutUs*/
@@ -127,17 +161,24 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #c7293a;
+    float: right;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    border-radius: 7px;
 }
 
 button:hover {
     opacity: 0.8;
+}
+
+#resourceRequest {
+  margin: 20px 50px;
+  color: #c7293a;
+
 }
 
 /* Extra styles for the cancel button */
