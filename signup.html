@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head class ="signupHeader">
-    <link rel= "stylesheet" href= "signup.css">
+  <html>
+  <head>
     <meta charset="utf-8">
-    <title id= "signupTitle" >Signup</title>
-    <form>
+    <meta name="viewport" content="width=device-width">
+    <title>FIRST UP</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+     <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+ <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
   </head>
-  <body class = signupBody >
-    <header>
-      <h1 id="OrgName"> First Up!</h1>
-      <div class="topnav" id="myTopnav">
-        <a href="aboutUs.html" class="active">About Us</a>
-        <a href="index.html">Home</a>
-        <a href="#Resource.html">Resource Board</a>
-        <a href="logIn">Log-in/Sign-up</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
-        </header>
-   <div>
+  <body>
+<header>
+  <h1 id="OrgName"> FirstUp!</h1>
+  <div class="topnav" id="myTopnav">
+    <a href="aboutUs.html">About Us</a>
+    <a href="index.html">Home</a>
+    <a href="#Resource.html">Resource Board</a>
+    <a href="login">Login</button></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</header>
+   <div id="topStart">
+     <div id="topStart2">
      <fieldset id="signupForm">
-    <form class="signupForm">
-        <legend id= "signupformtitle" >Sign Up to First Up</legend>
-        <p class = "signupOrgName"><label for="org"> Organization name: </label>
-        <input name="org" type="text" /><br></p>
+    <form class="signupForm" action="mailto:mbrown488@gmail.com">
+        <legend id= "signupformtitle" >Sign Up!</legend>
+        <p class = "signupOrgName">
+          <label for="org">Organization name: </label>
+          <input id="org" type="text" value=""/><br></p>
         <p class = "signupEmail">  <label for="email">Email</label>
         <input name="email" type="text" /></p>
         <p class = "signupPhone"> <label for="phone">Phone</label>
@@ -38,10 +45,12 @@
         <p><label for="description">Description of Organization</label>
         <input name="description" type="text" /></p>
 
-      <p class = "submit"><button type="submit">Sign Up</button></p>
+   <button id="submitSignup" type="click">Sign Up</button>
     </form>
   </fieldset>
+    </div>
 </div>
-
+<script src="javascript.js"></script>
   </body>
+
 </html>
