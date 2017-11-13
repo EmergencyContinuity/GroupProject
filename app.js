@@ -21,7 +21,7 @@ function Organization(name, address, need) {
   this.need = need;
   this.list = [];
   allOrganizations.push(this);
-};
+}
 
 function addOrganization(event) {
   event.preventDefault();
@@ -46,16 +46,24 @@ function createDiv() {
   var div = document.createElement('div');
   div.setAttribute('class', 'baby');
 
+  var babyButton = document.createElement('button');
+  babyButton.setAttribute('id', 'babyButton');
+  babyButton.textContent = 'I want to Help!';
+  div.appendChild(babyButton);
+
   var pName = document.createElement('p');
-  pName.textContent = allOrganizations[0].name;
+  pName.setAttribute('id', 'pName');
+  pName.textContent = 'ORGANIZATION: ' + allOrganizations[0].name;
   div.appendChild(pName);
 
   var pAddress = document.createElement('p');
-  pAddress.textContent = allOrganizations[0].address;
+  pAddress.setAttribute('id', 'pAddress');
+  pAddress.textContent = 'ADDRESS: ' + allOrganizations[0].address;
   div.appendChild(pAddress);
 
   var pNeed = document.createElement('p');
-  pNeed.textContent = allOrganizations[0].need;
+  pNeed.setAttribute('id', 'pNeed');
+  pNeed.textContent = 'NEED: ' + allOrganizations[0].need;
   div.appendChild(pNeed);
 
   // for(var orgs = 0; orgs < allOrganizations.length; orgs++) {

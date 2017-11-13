@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width">
     <title>FIRST UP</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Bevan|Concert+One|Freckle+Face|Fredericka+the+Great|Orbitron|Ribeye+Marrow|Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Cabin+Sketch|Caveat|Dosis|Gloria+Hallelujah|Handlee|Indie+Flower|Kalam|Kaushan+Script|Permanent+Marker|Rancho|The+Girl+Next+Door" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <title>About Us</title>
     <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
@@ -13,25 +17,24 @@
   </head>
     <body>
       <header>
-        <h1 id="OrgName"> FirstUp!</h1>
-        <div class="topnav" id="myTopnav">
-          <a href="aboutUs.html">About Us</a>
-          <a href="index.html">Home</a>
-          <a href="#Resource.html">Resource Board</a>
-          <a href="signup.html">Log-in/Sign-up</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-          </header>
+      <h1 id="OrgName"> StepUp</h1>
+      <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="#aboutus.html">About Us</a>
+      <a href="#signup.html">Sign-Up</a>
+      <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      </header>
 
+    <div id="body">
       <h1 id="aboutUsHeader">About Us</h1>
       <h2 id="aboutUsTagLine">We are StepUp - Right now.
       Helping others.
       Community of one.
-    </h2>
+      </h2>
       <div id="aboutUsVideo">
-
-
-      <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="800em" height="500em"
+        <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="800em" height="500em"
       poster="images/test.jpg" data-setup="{}">
         <source src="images/test.mp4" type='video/mp4'>
         <source src="MY_VIDEO.webm" type='video/webm'>
@@ -39,33 +42,32 @@
           To view this video please enable JavaScript, and consider upgrading to a web browser that
           <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
         </p>
-      </video>
+        </video>
       </div>
 
       <div id="aboutUsPics">
 
       <div class="aboutUsImg">
-        <img src="images/test.jpg" alt="test" height="200em" width="200em"></img>
-      <p class="aboutUsParagraph">this is where some information<br> about us would go if we decide to put any!</p>
+        <img src="Images/MichaelBrown.jpg" alt="Michael Brown" height="200em" width="200em"></img>
+      <p class="aboutUsParagraph"><u><b>Michael Brown</b></u></br></br>Michael is a Operations Coordinator for the Process Improvement department of a large healthcare system in Seattle. In his free time he reads, sings Taylor Swift in the car and is Batman. In a zombie apocalypse he would just have himself as his one thing because....well he's Batman.</p>
+      </div>
+
+      <div class="aboutUsImg">
+        <img src="Images/test.jpg" alt="test" height="200em" width="200em"></img>
+      <p class="aboutUsParagraph"><u><b>Caitlin Sweeney</b></u></br></br>this is where some information about us would go if we decide to put any!</p>
+      </div>
+
+      <div class="aboutUsImg">
+        <img src="Images/CodyGreen-8.jpg" alt="Cody Green" height="200em" width="200em"></img>
+      <p class="aboutUsParagraph"><u><b>Cody Green</b></u></br></br>Cody Green is a full-time stay at home dad, part-time student, and part-time adult. He is a homebrewer, computer enthusiast, and a fan of games from board to computer. In a zombie apocalypse he would want the rock as his one thing to have because look at him.</p>
       </div>
 
       <div class="aboutUsImg">
         <img src="images/test.jpg" alt="test" height="200em" width="200em"></img>
-      <p class="aboutUsParagraph">this is where some information<br> about us would go if we decide to put any!</p>
+      <p class="aboutUsParagraph"><u><b>Darcy Knore</b></u></br></br>this is where some information about us would go if we decide to put any!</p>
       </div>
-
-      <div class="aboutUsImg">
-        <img src="images/test.jpg" alt="test" height="200em" width="200em"></img>
-      <p class="aboutUsParagraph">this is where some information<br> about us would go if we decide to put any!</p>
-      </div>
-
-      <div class="aboutUsImg">
-        <img src="images/test.jpg" alt="test" height="200em" width="200em"></img>
-      <p class="aboutUsParagraph">this is where some information<br> about us would go if we decide to put any!</p>
-      </div>
-
     </div>
-
+  </div>
 
 
 
