@@ -1,3 +1,4 @@
+
 body {
   margin: 0px;
 }
@@ -15,14 +16,68 @@ body {
 
 header {
   background: url(https://zenandpi.files.wordpress.com/2015/11/photo-1444664361762-afba083a4d77.jpg?w=825&h=510&crop=1) no-repeat center center fixed;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
   /*opacity: .8;*/
   height: 300px;
   margin-top: 0px;
+
   padding-top: 0px;
+  z-index:10;
+}
+
+#
+
+}
+
+#topStart {
+    width:100%;
+    z-index:5;
+    overflow:auto;
+  background: inherit;
+}
+
+#topStart {
+   padding-top: 220px;
+}
+
+#topStart2 {
+/*   border: solid thin #12355B; */
+  width: 75%;
+  position: absolute;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 5%;
+  background: #E5E3E3;
+  border-radius: 10px;
+
+}
+
+legend {
+    text-align: center;
+/*   border: dashed red; */
+  font-family: 'Cinzel', serif;
+  padding-top: 10px;
+  margin-top: 0;
+  border-top:;
+  font-size: 2em;
+  text-shadow: 2px 0px 0px rgba(150, 150, 150, 1);
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+fieldset{
+  border: none;
+ -webkit-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+-moz-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*
@@ -69,16 +124,19 @@ font-family: 'The Girl Next Door', cursive;*/
 }
 
 .topnav {
+
   background-color: #1f4d7d;
   color: white;
   height: 50px;
   width: 100%;
   padding-top: 0px;
   margin-top: 0px;
+
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+
   float: left;
   display: block;
   color: white;
@@ -86,6 +144,7 @@ font-family: 'The Girl Next Door', cursive;*/
   padding: 10px;
   text-decoration: none;
   font-size: 17px;
+
 }
 
 /* Change the color of links on hover */
