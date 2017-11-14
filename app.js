@@ -1,7 +1,6 @@
 'use strict' ;
 // Get the modal
 var modal = document.getElementById('id01');
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -10,19 +9,21 @@ window.onclick = function(event) {
 };
 // debugger;
 var allOrganizations = [];
-
-if(allOrganizations.length > 0){
+console.log(allOrganizations);
+if(localStorage.newClick){
   var newClicks = JSON.parse(localStorage.newClick);
+  for(var i = 0; i < newClicks.length; i++){
+    allOrganizations[i] = newClicks[i];
+    createDiv();
+  }
 }
-
 function Organization(name, address, need) {
   this.name = name;
   this.address = address;
   this.need = need;
   this.list = [];
   allOrganizations.push(this);
-};
-
+}
 function addOrganization(event) {
   event.preventDefault();
   console.log(event.target[0]);
@@ -39,30 +40,33 @@ function addOrganization(event) {
   localStorage.newClick = JSON.stringify(allOrganizations);
   createDiv();
 }
-
 function createDiv() {
   var papa = document.getElementById('papa');
+  for(var i = 0; i < allOrganizations.length; i++) {
+    var div = document.createElement('div');
+    div.setAttribute('class', 'baby');
+    var babyButton = document.createElement('button');
+    babyButton.setAttribute('id', 'babyButton');
+    babyButton.textContent = 'I want to Help!';
+    div.appendChild(babyButton);
+    var pName = document.createElement('p');
+    pName.setAttribute('id', 'pName');
+    pName.textContent = 'ORGANIZATION: ' + allOrganizations[i].name;
+    div.appendChild(pName);
+    var pAddress = document.createElement('p');
+    pAddress.setAttribute('id', 'pAddress');
+    pAddress.textContent = 'ADDRESS: ' + allOrganizations[i].address;
+    div.appendChild(pAddress);
+    var pNeed = document.createElement('p');
+    pNeed.setAttribute('id', 'pNeed');
+    pNeed.textContent = 'NEED: ' + allOrganizations[i].need;
+    div.appendChild(pNeed);
+    // for(var orgs = 0; orgs < allOrganizations.length; orgs++) {
 
-  var div = document.createElement('div');
-  div.setAttribute('class', 'baby');
-
-  var pName = document.createElement('p');
-  pName.textContent = allOrganizations[0].name;
-  div.appendChild(pName);
-
-  var pAddress = document.createElement('p');
-  pAddress.textContent = allOrganizations[0].address;
-  div.appendChild(pAddress);
-
-  var pNeed = document.createElement('p');
-  pNeed.textContent = allOrganizations[0].need;
-  div.appendChild(pNeed);
-
-  // for(var orgs = 0; orgs < allOrganizations.length; orgs++) {
+    var storage = JSON.parse(localStorage.newClick);
+  }
   papa.appendChild(div);
-  var storage = JSON.parse(localStorage.newClick);
 }
-
 document.getElementById('resourceRequest').addEventListener('submit', addOrganization);
 // var addOrg = document.getElementById('button');//WILL FORM HAVE A CLASS VS ID?
 // addOrganization();

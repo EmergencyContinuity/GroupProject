@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>FIRST UP</title>
+    <title>STEP UP</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-     <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
- <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-<!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Bevan|Concert+One|Freckle+Face|Fredericka+the+Great|Orbitron|Ribeye+Marrow|Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Cabin+Sketch|Caveat|Dosis|Gloria+Hallelujah|Handlee|Indie+Flower|Kalam|Kaushan+Script|Permanent+Marker|Rancho|The+Girl+Next+Door" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
-<header>
-  <h1 id="OrgName"> FirstUp!</h1>
-  <div class="topnav" id="myTopnav">
-    <a href="aboutUs.html">About Us</a>
+    <header>
+    <h1 id="OrgName"> StepUp</h1>
+    <div class="topnav" id="myTopnav">
     <a href="index.html">Home</a>
-    <a href="#Resource.html">Resource Board</a>
-    <a href="login">Login</button></a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="signup.html">Sign-Up</a>
+    <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-</header>
-//take this out//
+    </div>
+    </header>
+
 <!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<!-- <button onclick="document.getElementById('id01').style.display='block'">Login</button> -->
 
 <!-- The Modal -->
 <div id="id01" class="modal">
@@ -39,7 +42,6 @@ class="close" title="Close Modal">&times;</span>
     <div class="container">
       <label><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
-
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
@@ -53,14 +55,13 @@ class="close" title="Close Modal">&times;</span>
     </div>
   </form>
 </div>
-  <div>
-    
-    <div id="papa">
 
 
-    </div>
+<div id="body">
+    <p id="dirTagLine"><b>Step Up - Right now. Helping others. Community of one.</b></p>
+    <p id="directions"><b>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'.</b></p>
+    <div id="papa"></div>
 
-  </div>
     <form id="resourceRequest" action="index.html" method="post">
       <fieldset data-role="collapsible">
       <legend>Add Resource Request</legend>
@@ -72,13 +73,18 @@ class="close" title="Close Modal">&times;</span>
         <input type="text" name="need" value="">
         <!-- <label for="list"></label> -->
         <!-- <input type="text" name="list" value=""> -->
-        <button type="submit" name="button" id="papaID">Just Do It</button>
+        <button type="submit" name="button" id="papaID">Submit</button>
       </fieldset>
 
     </form>
    <footer>
-    <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     <a href="#" class="fa fa-rss"></a>
+     <a href="#" class="fa fa-instagram"></a>
+     <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-facebook"></a>
+     <!-- <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
   </footer>
+</div>
     <script type="text/javascript" src="app.js">
     </script>
   </body>
