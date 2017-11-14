@@ -1,3 +1,4 @@
+
 body {
   margin: 0px;
 }
@@ -23,6 +24,30 @@ header {
   height: 300px;
   margin-top: 0px;
   padding-top: 0px;
+  z-index:10;
+}
+
+legend {
+  text-align: center;
+/*   border: dashed red; */
+  font-family: 'Cinzel', serif;
+  padding-top: 10px;
+  margin-top: 0;
+  border-top:;
+  font-size: 2em;
+  text-shadow: 2px 0px 0px rgba(150, 150, 150, 1);
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+fieldset{
+  border: none;
+  -webkit-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  -moz-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*
@@ -56,51 +81,6 @@ font-family: 'The Girl Next Door', cursive;*/
   padding-top: 20px;
   margin-bottom: 40px;
   color: #c7293a;
-}
-
-#topStart {
-    width:100%;
-    z-index:5;
-    overflow:auto;
-  background: inherit;
-}
-
-#topStart {
-   padding-top: 50px;
-}
-
-#topStart2 {
-/*   border: solid thin #12355B; */
-  width: 75%;
-  position: absolute;
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-bottom: 5%;
-  background: #E5E3E3;
-  border-radius: 10px;
-
-}
-
-#signupformtitle {
-    text-align: center;
-/*   border: dashed red; */
-  font-family: 'Cinzel', serif;
-  padding-top: 0;
-  margin-top: ;
-  border-top:;
-  font-size: 2em;
-  text-shadow: 2px 0px 0px rgba(150, 150, 150, 1);
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-#signupForm{
-  border: none;
- -webkit-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
--moz-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
-  margin-top: 0;
-  padding-top: 0;
 }
 
 #loginButton {
@@ -149,6 +129,7 @@ box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
 .topnav .icon {
   display: none;
 }
+
 .nav a{
   text-decoration: none;
   color: white;
@@ -170,7 +151,7 @@ box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
 
 #papa {
   border: 8px solid #807264;
-  background-color: white;
+  background-color: #fdfbfb;
   height: 600px;
   width: 900px;
   margin-top: 0px;
@@ -291,134 +272,195 @@ footer {
   padding-top: 60px;
 }
 
-img {
+.aboutUsImg {
   display: inline;
   width: 200px;
-  margin-left: 50px;
-  margin-right: 20px;
+  margin-right: 100px;
   padding-bottom: 10px;
   radius: 10px;
 }
 
 .aboutUsParagraph {
   width: 200px;
-  padding-left: 50px;
+  padding-left: 10px;
   height: 200px;
   text-align: center;
 }
 
-/*#aboutUsPics {
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  padding-top: 30px;
-}*/
-
 /*login*/
 /* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 button:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
-
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
 }
 
 /* Center the image and position the close button */
 .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
 }
 
 img.avatar {
-    width: 40%;
-    border-radius: 50%;
+  width: 40%;
+  border-radius: 50%;
 }
 
 .container {
-    padding: 16px;
+  padding: 16px;
 }
 
 span.psw {
-    float: right;
-    padding-top: 16px;
+  float: right;
+  padding-top: 16px;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
 .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .close:focus {
-    color: red;
-    cursor: pointer;
+  color: red;
+  cursor: pointer;
 }
 
 /* Add Zoom Animation */
 .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
 }
 
 @keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+  from {transform: scale(0)}
+  to {transform: scale(1)}
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/****THIS IS THE SIGN-UP FORM SECTION****/
+#signUpIntro {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: bold
+}
+
+#topStart {
+  border: 8px solid #807264;
+  background-color: #fdfbfb;
+  height: 800px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  /*z-index: 5;*/
+  overflow:auto;
+}
+
+/*
+#topStart2 {
+border: solid thin #12355B;
+width: 75%;
+position: absolute;
+margin-left: 12%;
+margin-right: 12%;
+margin-bottom: 5%;
+background: #E5E3E3;
+border-radius: 10px;
+}*/
+
+#signupForm {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 0px;
+  margin-top: 20px;
+  padding: 20px;
+  /*background: url(https://static.worldpoliticsreview.com/articles/19261/l_haiti_recovery_07052016_1.jpg) no-repeat center center;*/
+  -webkit-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  -moz-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  /*color: rgb(210, 213, 223);
+  opacity: .8;
+  width: 55%;
+  min-height: 35%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;*/
+}
+
+#signupformtitle{
+  color: #12355B;
+  margin: 0 auto;
+  font-size : 18pt;
+  text-align: center;
+  padding-top: 0;
+  margin-top: ;
+  border-top:;
+  font-size: 2em;
+  text-shadow: 2px 0px 0px rgba(150, 150, 150, 1);
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
