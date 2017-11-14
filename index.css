@@ -16,22 +16,19 @@ body {
 
 header {
   background: url(https://zenandpi.files.wordpress.com/2015/11/photo-1444664361762-afba083a4d77.jpg?w=825&h=510&crop=1) no-repeat center center fixed;
-
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   /*opacity: .8;*/
   height: 300px;
   margin-top: 0px;
-
   padding-top: 0px;
   z-index:10;
 }
 
 legend {
-    text-align: center;
+  text-align: center;
 /*   border: dashed red; */
   font-family: 'Cinzel', serif;
   padding-top: 10px;
@@ -45,9 +42,9 @@ legend {
 
 fieldset{
   border: none;
- -webkit-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
--moz-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  -webkit-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  -moz-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
+  box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
   margin-top: 0;
   padding-top: 0;
   font-family: 'Roboto', sans-serif;
@@ -97,19 +94,16 @@ font-family: 'The Girl Next Door', cursive;*/
 }
 
 .topnav {
-
   background-color: #1f4d7d;
   color: white;
   height: 50px;
   width: 100%;
   padding-top: 0px;
   margin-top: 0px;
-
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-
   float: left;
   display: block;
   color: white;
@@ -117,7 +111,6 @@ font-family: 'The Girl Next Door', cursive;*/
   padding: 10px;
   text-decoration: none;
   font-size: 17px;
-
 }
 
 /* Change the color of links on hover */
@@ -136,6 +129,7 @@ font-family: 'The Girl Next Door', cursive;*/
 .topnav .icon {
   display: none;
 }
+
 .nav a{
   text-decoration: none;
   color: white;
@@ -402,13 +396,21 @@ span.psw {
 }
 
 /****THIS IS THE SIGN-UP FORM SECTION****/
+#signUpIntro {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: bold
+}
+
 #topStart {
   border: 8px solid #807264;
   background-color: #fdfbfb;
-  height: 600px;
+  height: 800px;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   /*z-index: 5;*/
   overflow:auto;
 }
@@ -428,24 +430,21 @@ border-radius: 10px;
 #signupForm {
   text-transform: uppercase;
   font-weight: bold;
+  padding-top: 0px;
+  margin-top: 20px;
   padding: 20px;
   /*background: url(https://static.worldpoliticsreview.com/articles/19261/l_haiti_recovery_07052016_1.jpg) no-repeat center center;*/
   -webkit-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
   -moz-box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
   box-shadow: -1px 20px 71px -21px rgba(39,71,105,0.86);
-  margin-top: 0;
-  padding-top: 0;
   /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;*/
-
   /*color: rgb(210, 213, 223);
   opacity: .8;
-
   width: 55%;
   min-height: 35%;
-
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: auto;
