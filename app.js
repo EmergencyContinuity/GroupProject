@@ -1,13 +1,39 @@
 'use strict' ;
-// Get the modal
+
 var modal = document.getElementById('id01');
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = 'none';
   }
 };
-// debugger;
+// var uname = document.getElementById('uname').addEventListener(click,'password');
+// uname.textContent = 'uname';
+
+// var psw = document.getElementById('psw').addEventListener(click,'passWord');
+//
+// function passWord() {
+//   var testV = 1;
+//   if(psw.input = 'password'){
+//     while (testV < 3) {
+//       if (!pass1)
+//         history.go(-1);
+//       if (pass1.toLowerCase() == 'password') {
+//         alert('Access Granted!');
+//         window.open('index.html');
+//         break;
+//       }
+//       testV += 1;
+//       var pass1 =
+//     prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+//     }
+//     if (pass1.toLowerCase() != 'password' & testV == 3)
+//       history.go(-1);
+//     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+//     return '';
+//   }
+// }
+
 var allOrganizations = [];
 console.log(allOrganizations);
 if(localStorage.newClick){
@@ -32,14 +58,15 @@ function addOrganization(event) {
   var newAddress = event.target.address.value;
   var newAmount = event.target.amount.value;
   var newNeed = event.target.need.value;
+
   // var newList = event.target.list.value;
   new Organization(newName, newAddress, newAmount, newNeed);
   // papa.innerHTML = ' ';
+
   event.target.name.value = null;
   event.target.address.value = null;
   event.target.amount.value = null;
   event.target.need.value = null;
-  // event.target.list.value = null;
   localStorage.newClick = JSON.stringify(allOrganizations);
   createDiv();
 }
@@ -50,6 +77,7 @@ function createDiv() {
     div.setAttribute('class', 'baby');
     var babyButton = document.createElement('button');
     babyButton.setAttribute('id', 'babyButton');
+    babyButton.setAttribute('onclick','window.location="https://www.paypal.com/donate/?token=lCxyAUCKWYMaPFjkon0BGfv5co6jhEnqOH11ZH_SsMgdDrCAu34ib96utBMMdDhvaUW8EG&country.x=US&locale.x=US"');
     babyButton.textContent = 'I want to Help!';
     div.appendChild(babyButton);
     var pName = document.createElement('p');
@@ -70,12 +98,14 @@ function createDiv() {
     pNeed.setAttribute('id', 'pNeed');
     pNeed.textContent = 'NEED:  ' + allOrganizations[i].need;
     div.appendChild(pNeed);
-    // for(var orgs = 0; orgs < allOrganizations.length; orgs++) {
 
     var storage = JSON.parse(localStorage.newClick);
   }
   papa.appendChild(div);
 }
 document.getElementById('resourceRequest').addEventListener('submit', addOrganization);
-// var addOrg = document.getElementById('button');//WILL FORM HAVE A CLASS VS ID?
-// addOrganization();
+// document.getElementById('babyButton').addEventListener('onclick',donate);
+//
+// function donate(){
+//   window.open(url,'https://www.paypal.com/donate/?token=lCxyAUCKWYMaPFjkon0BGfv5co6jhEnqOH11ZH_SsMgdDrCAu34ib96utBMMdDhvaUW8EG&country.x=US&locale.x=US');
+// }

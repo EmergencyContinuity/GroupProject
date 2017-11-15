@@ -97,7 +97,7 @@ font-family: 'The Girl Next Door', cursive;*/
 }
 
 /* Add an active class to highlight the current page */
-.active {
+.topnav a:active {
   background-color: rgb(218, 48, 68);
   color: white;
 }
@@ -433,6 +433,7 @@ footer {
   height: 200px;
   margin-left: 100px;
   radius: 10px;
+
 }
 
 .aboutUsParagraph {

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Bevan|Concert+One|Freckle+Face|Fredericka+the+Great|Orbitron|Ribeye+Marrow|Special+Elite" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Cabin+Sketch|Caveat|Dosis|Gloria+Hallelujah|Handlee|Indie+Flower|Kalam|Kaushan+Script|Permanent+Marker|Rancho|The+Girl+Next+Door" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -22,23 +23,26 @@
     </header>
 
 <!-- The Modal -->
+
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'"
 class="close" title="Close Modal">&times;</span>
 
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="aboutUs.html">
+
+  <form class="modal-content animate" action="index.html">
     <div class="imgcontainer">
       <img src="images/test.jpg" alt="StepUp" id="signupImg">
     </div>
 
     <div class="container">
       <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" id="uname" required>
       <label><b>Password</b></label>
+
       <input type="password" placeholder="Enter Password" name="psw" required>
       <button type="submit"  action="aboutUs.html" id="loginButton2">Login</button>
       <!-- <input type="checkbox" checked="checked" placeholder="Remember Me"> -->
+
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
@@ -48,6 +52,8 @@ class="close" title="Close Modal">&times;</span>
 
 
 <div id="body">
+
+
     <p id="dirTagLine"><b>Step Up - Right now. Helping others. Community of one.</b></p>
     <p id="directions"><b>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</b></p>
     <div id="papa"></div>
@@ -63,9 +69,12 @@ class="close" title="Close Modal">&times;</span>
         <input type="text" name="amount" value="">
         <label for="need">Needs:</label>
         <input type="text" name="need" value="">
+
         <button type="submit" name="button" id="requestFormButton">Submit</button>
+
       </fieldset>
     </form>
+
 
     <footer>
      <img class="socialMediaIcons" id="rss" src="images/rss.png">
@@ -76,5 +85,6 @@ class="close" title="Close Modal">&times;</span>
    </footer>
   </div>
     <script type="text/javascript" src="app.js"></script>
+
   </body>
 </html>
