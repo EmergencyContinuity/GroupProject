@@ -17,9 +17,10 @@ if(localStorage.newClick){
     createDiv();
   }
 }
-function Organization(name, address, need) {
+function Organization(name, address, amount, need) {
   this.name = name;
   this.address = address;
+  this.amount = amount;
   this.need = need;
   this.list = [];
   allOrganizations.push(this);
@@ -29,12 +30,14 @@ function addOrganization(event) {
   console.log(event.target[0]);
   var newName = event.target.name.value;
   var newAddress = event.target.address.value;
+  var newAmount = event.target.amount.value;
   var newNeed = event.target.need.value;
   // var newList = event.target.list.value;
-  new Organization(newName, newAddress, newNeed);
+  new Organization(newName, newAddress, newAmount, newNeed);
   // papa.innerHTML = ' ';
   event.target.name.value = null;
   event.target.address.value = null;
+  event.target.amount.value = null;
   event.target.need.value = null;
   // event.target.list.value = null;
   localStorage.newClick = JSON.stringify(allOrganizations);
@@ -51,15 +54,21 @@ function createDiv() {
     div.appendChild(babyButton);
     var pName = document.createElement('p');
     pName.setAttribute('id', 'pName');
-    pName.textContent = 'ORGANIZATION: ' + allOrganizations[i].name;
+    pName.textContent = 'ORGANIZATION:  ' + allOrganizations[i].name;
     div.appendChild(pName);
     var pAddress = document.createElement('p');
     pAddress.setAttribute('id', 'pAddress');
-    pAddress.textContent = 'ADDRESS: ' + allOrganizations[i].address;
+    pAddress.textContent = 'ADDRESS:  ' + allOrganizations[i].address;
     div.appendChild(pAddress);
+    // Added amount
+    var pAmount = document.createElement('p');
+    pAmount.setAttribute('id', 'pAmount');
+    pAmount.textContent = 'AMOUNT:  ' + allOrganizations[i].address;
+    div.appendChild(pAmount);
+
     var pNeed = document.createElement('p');
     pNeed.setAttribute('id', 'pNeed');
-    pNeed.textContent = 'NEED: ' + allOrganizations[i].need;
+    pNeed.textContent = 'NEED:  ' + allOrganizations[i].need;
     div.appendChild(pNeed);
     // for(var orgs = 0; orgs < allOrganizations.length; orgs++) {
 

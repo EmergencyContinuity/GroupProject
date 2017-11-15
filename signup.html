@@ -10,25 +10,22 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Bevan|Concert+One|Freckle+Face|Fredericka+the+Great|Orbitron|Ribeye+Marrow|Special+Elite" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Cabin+Sketch|Caveat|Dosis|Gloria+Hallelujah|Handlee|Indie+Flower|Kalam|Kaushan+Script|Permanent+Marker|Rancho|The+Girl+Next+Door" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
-    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-    <!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
   </head>
   <body>
     <header>
-    <h1 id="OrgName"> StepUp</h1>
-    <div class="topnav" id="myTopnav">
-    <a href="index.html">Home</a>
-    <a href="aboutUs.html">About Us</a>
-    <a href="signup.html">Sign-Up</a>
-    <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+      <h1 id="OrgName">StepUp</h1>
+      <div id="topnav">
+      <a href="index.html">Home</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="signup.html">Sign-Up</a>
+      <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+      </div>
     </header>
+
    <div id="body">
-     <p id="signUpIntro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+     <p id="dirTagLine"><b>Step Up - Right now. Helping others. Community of one.</b></p>
+     <p id="signUpIntro"><b>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</b></p>
     <div id="topStart">
-     <!-- <div id="topStart2"> -->
      <fieldset id="signupForm">
       <form class="signupForm" action="mailto:mbrown488@gmail.com">
         <legend id= "signupformtitle" >Sign Up!</legend>
@@ -50,12 +47,10 @@
         <p><label for="description">Description of Organization</label>
         <input name="description" type="text" /></p>
 
-
         <button id="submitSignup" type="click">Sign Up</button>
       </form>
     </fieldset>
-    <!-- </div> -->
-   </div>
+    </div>
   </div>
   <script src="javascript.js"></script>
   </body>
