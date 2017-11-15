@@ -10,25 +10,49 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Bevan|Concert+One|Freckle+Face|Fredericka+the+Great|Orbitron|Ribeye+Marrow|Special+Elite" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Cabin+Sketch|Caveat|Dosis|Gloria+Hallelujah|Handlee|Indie+Flower|Kalam|Kaushan+Script|Permanent+Marker|Rancho|The+Girl+Next+Door" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
-    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-    <!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
-</head>
+
 <body>
     <header>
         <h1 id="OrgName"> StepUp</h1>
         <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
+            <a href="volunteer.html">Volunteer</a>
             <a href="aboutUs.html">About Us</a>
             <a href="signup.html">Sign-Up</a>
             <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+
+          <form class="modal-content animate" action="index.html">
+            <div class="imgcontainer">
+              <img src="images/test.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit"  action="index.html">Login</button>
+              <input type="checkbox" checked="checked"> Remember me
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
     </header>
     <div id="body">
         <p id="signUpIntro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
         <div id="topStart">
-            <!-- <div id="topStart2"> -->
+
             <form id="signupForm" action="index.html" method="post">
                 <fieldset class="SF">
                     <legend id="signupformtitle">Organization Page<br> Welcome:<br> Please sign up to post</legend>
@@ -56,7 +80,7 @@
                     <button id="submitSignup" type="submit">Sign Up</button>
                 </fieldset>
             </form>
-            <!-- </div> -->
+
         </div>
     </div>
     <script src="signup.js"></script>

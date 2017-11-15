@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <title>About Us</title>
     <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
-    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-    <!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
     <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
   </head>
@@ -27,6 +26,32 @@
       <a href="signup.html">Sign-Up</a>
       <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+
+
+        <form class="modal-content animate" action="index.html">
+          <div class="imgcontainer">
+            <img src="images/test.jpg" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit"  action="index.html">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
       </div>
       </header>
 
