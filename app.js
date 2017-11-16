@@ -78,6 +78,7 @@ function createDiv() {
     var babyButton = document.createElement('a');
     babyButton.setAttribute('id', 'babyButton');
     babyButton.setAttribute('href','https://www.paypal.com/donate/?token=lCxyAUCKWYMaPFjkon0BGfv5co6jhEnqOH11ZH_SsMgdDrCAu34ib96utBMMdDhvaUW8EG&country.x=US&locale.x=US');
+    
     babyButton.setAttribute('target','_blank');
     babyButton.textContent = 'I want to Help!';
     div.appendChild(babyButton);
