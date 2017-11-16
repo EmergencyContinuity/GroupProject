@@ -9,54 +9,51 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Bevan|Concert+One|Freckle+Face|Fredericka+the+Great|Orbitron|Ribeye+Marrow|Special+Elite" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Cabin+Sketch|Caveat|Dosis|Gloria+Hallelujah|Handlee|Indie+Flower|Kalam|Kaushan+Script|Permanent+Marker|Rancho|The+Girl+Next+Door" rel="stylesheet">
-
   </head>
   <body>
     <header>
-    <h1 id="OrgName"> StepUp</h1>
-    <div class="topnav" id="myTopnav">
-    <a href="index.html">Home</a>
-    <a href="volunteer.html">Volunteer</a>
-    <a href="aboutUs.html">About Us</a>
-    <a href="signup.html">Sign-Up</a>
-    <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+      <h1 id="OrgName">StepUp</h1>
+      <div id="topnav">
+      <a href="index.html">Home</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="signup.html">Sign-Up</a>
+      <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+      </div>
     </header>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
 
 
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
-class="close" title="Close Modal">&times;</span>
+      <form class="modal-content animate" action="index.html">
+        <div class="imgcontainer">
+          <img src="images/test.jpg" alt="StepUp" id="signupImg">
+        </div>
 
-  <form class="modal-content animate" action="index.html">
-    <div class="imgcontainer">
-      <img src="images/test.jpg" alt="Avatar" class="avatar">
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="uname" required>
+          <label><b>Password</b></label>
+
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit"  action="aboutUs.html" id="loginButton2">Login</button>
+          <!-- <input type="checkbox" checked="checked" placeholder="Remember Me"> -->
+
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+
+      </form>
     </div>
-
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit"  action="index.html">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
-
 <div id="body">
     <p id="dirTagLine"><b>Step Up - Right now. Helping others. Community of one.</b></p>
-    <p id="directions"><b>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'.</b></p>
+    <p id="directions1"><b>Please fill out the request form to be added to the Available to Volunteer list. This list will be utilized by organizations to pull in addition resources to meet need other than what’s listed in the Organization message board.
+Messages are evaluated and audited by site moderators.
+Posts that don’t have all the requested details will receive an email to modify their request. Requests not modified after 24hrs will have to be removed.
+Your willingness to Step Up is greatly appreciated!
+</b></p>
     <div id="papa"></div>
-
     <form id="resourceRequest" action="volunteer.html" method="post">
       <fieldset data-role="collapsible">
       <legend>Volunteer Donation Form</legend>
@@ -66,28 +63,16 @@ class="close" title="Close Modal">&times;</span>
         <input type="text" name="address" value="">
         <label for="donation">Donation:</label>
         <input type="text" name="donation" value="">
-
         <button type="submit" name="button" id="papaID">Submit</button>
       </fieldset>
-
     </form>
-   <footer>
-     <a href="#" class="fa fa-rss"></a>
-     <a href="#" class="fa fa-instagram"></a>
-     <a href="#" class="fa fa-twitter"></a>
-     <a href="#" class="fa fa-facebook"></a>
 
-  </footer>
 </div>
     <script type="text/javascript" src="vol.js">
     </script>
-
     <footer id = "footer">
-
-
         <a href="https://twitter.com/StepUpToday1" class="fa fa-twitter" font-size = "22pt"></a>
         <a href="https://www.facebook.com/1StepUp1/" class="fa fa-facebook"></a>
-
      <div>
       <p class= "pfooter" id= "contactTitle">
       <b><u>Contact Us</u></b>
@@ -97,5 +82,4 @@ class="close" title="Close Modal">&times;</span>
       </div>
     </footer>
   </body>
-
 </html>

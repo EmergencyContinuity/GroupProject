@@ -45,10 +45,10 @@ function createDiv() {
   for(var i = 0; i < allVolunteers.length; i++) {
     var div = document.createElement('div');
     div.setAttribute('class', 'baby');
-    var babyButton = document.createElement('button');
-    babyButton.setAttribute('id', 'babyButton');
-    babyButton.textContent = 'I want to Help!';
-    div.appendChild(babyButton);
+    // var babyButton = document.createElement('button');
+    // babyButton.setAttribute('id', 'babyButton');
+    // babyButton.textContent = 'I want to Help!';
+    // div.appendChild(babyButton);
     var pName = document.createElement('p');
     pName.setAttribute('id', 'pName');
     pName.textContent = 'Volunteer: ' + allVolunteers[i].name;
