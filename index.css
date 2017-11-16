@@ -508,3 +508,51 @@ legend {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
+/** footer**/
+
+#footer {
+  color: rgb(218, 48, 68);
+  text-shadow: 1px 1px 2px black;
+  background:  url(https://zenandpi.files.wordpress.com/2015/11/photo-1444664361762-afba083a4d77.jpg?w=825&h=510&crop=1) no-repeat center center fixed;
+  -webkit-appearance: none;
+  height: 50px;
+  width: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+ z-index: 14 ;
+ font-family: 'Cinzel', serif;
+  font-size: 14pt;
+}
+.pfooter {
+  text-align: center;
+  -webkit-appearance: none;
+  width: auto;
+  height: inherit;
+  margin-left: 10%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index : 15;
+}
+.pfooter b {
+  color : white;
+}
+.fa {
+  height: 15px;
+  width: 15px;
+  padding: 1.5%;
+  float: right;
+  text-align: center;
+  color: white;
+  border-radius: 7px;
+  text-shadow: 1px 1px 3px black;
+}
+.fa-facebook {
+
+  color: #3B5998;
+}
+.fa-twitter {
+  margin-right: 1%;
+  color: #55ACEE;
+}
