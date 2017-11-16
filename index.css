@@ -4,9 +4,12 @@
   font-family: 'Cinzel', serif;
   font-size: 20px;
 }*/
+
 html, body {
  background-color: #fbf3eb;
-
+ margin: 0px;
+ font-family: 'Cinzel', serif;
+ font-size: 20px;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
@@ -269,6 +272,26 @@ span.psw {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 50px;
+}
+#directions1 {
+  font-size: 20px;
+  width: 800px;
+  height: 80px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+#aboutUsDirections {
+  font-size: 20px;
+  width: 800px;
+  height: 80px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 300px;
   padding-bottom: 50px;
 }
 
