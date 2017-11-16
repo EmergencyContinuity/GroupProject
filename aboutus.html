@@ -9,24 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Bevan|Concert+One|Freckle+Face|Fredericka+the+Great|Orbitron|Ribeye+Marrow|Special+Elite" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Cabin+Sketch|Caveat|Dosis|Gloria+Hallelujah|Handlee|Indie+Flower|Kalam|Kaushan+Script|Permanent+Marker|Rancho|The+Girl+Next+Door" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <title>About Us</title>
     <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
-
     <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
   </head>
     <body>
       <header>
-      <h1 id="OrgName"> StepUp</h1>
-      <div class="topnav" id="myTopnav">
-      <a href="index.html">Home</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="aboutUs.html">About Us</a>
-      <a href="signup.html">Sign-Up</a>
-      <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+
+        <h1 id="OrgName">StepUp</h1>
+        <div id="topnav">
+        <a href="index.html">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="signup.html">Sign-Up</a>
+        <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+        </div>
+
+      </header>
       <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'"
       class="close" title="Close Modal">&times;</span>
@@ -34,33 +34,28 @@
 
         <form class="modal-content animate" action="index.html">
           <div class="imgcontainer">
-            <img src="images/test.jpg" alt="Avatar" class="avatar">
+            <img src="images/test.jpg" alt="StepUp" id="signupImg">
           </div>
 
           <div class="container">
             <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="text" placeholder="Enter Username" id="uname" required>
             <label><b>Password</b></label>
+
             <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit"  action="aboutUs.html" id="loginButton2">Login</button>
+            <!-- <input type="checkbox" checked="checked" placeholder="Remember Me"> -->
 
-            <button type="submit"  action="index.html">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-          </div>
-
-          <div class="container" style="background-color:#f1f1f1">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
+
         </form>
       </div>
-      </header>
 
     <div id="body">
+      <p id="dirTagLine"><b>Step Up - Right now. Helping others. Community of one.</b></p>
       <h1 id="aboutUsHeader">About Us</h1>
-      <h2 id="aboutUsTagLine">We are StepUp - Right now.
-      Helping others.
-      Community of one.
-      </h2>
       <div id="aboutUsVideo">
         <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="800em" height="500em"
       poster="images/test.jpg" data-setup="{}">
@@ -76,32 +71,43 @@
       <div id="aboutUsPics">
 
       <div class="aboutUsImg">
+        <img class="headshots" src="images/MichaelBrown.jpg" alt="Michael Brown">
+        <p class="aboutUsParagraph"><b>Michael Brown</b></br></br>Michael is a Operations Coordinator for the Process Improvement department of a large healthcare system in Seattle. In his free time he reads, sings Taylor Swift in the car and is Batman. In a zombie apocalypse he would just have himself as his one thing because....well he's Batman.</p>
+      </div>
 
-        <img class="headshots" src="images/MichaelBrown.jpg" alt="Michael Brown" height="200em" width="200em">
-
-      <p class="aboutUsParagraph"><u><b>Michael Brown</b></u></br></br>Michael is a Operations Coordinator for the Process Improvement department of a large healthcare system in Seattle. In his free time he reads, sings Taylor Swift in the car and is Batman. In a zombie apocalypse he would just have himself as his one thing because....well he's Batman.</p>
+      <div class="aboutUsImg">
+        <img class="headshots" src="images/CaitlinSweeney.jpg" alt="test">
+        <p class="aboutUsParagraph"><b>Caitlin Sweeney</b></br></br>Caitlin is heading into her 3rd career as a developer. Her curiosity has taken her from the Navy to Massage Therapy to this wonderful group of people at Step Up.  If a zombie took Caitlin today, she would survive by her two dogs, two cats and aquarium of fish.</p>
       </div>
 
       <div class="aboutUsImg">
 
-        <img class="headshots" src="images/CaitlinSweeney.jpg" alt="test" height="200em" width="200em">
-      <p class="aboutUsParagraph"><u><b>Caitlin Sweeney</b></u></br></br>Caitlin is heading into her 3rd career as a developer. Her curiosity has taken her from the Navy to Massage Therapy to this wonderful group of people at Step Up.  If a zombie took Caitlin today, she would survive by her two dogs, two cats and aquarium of fish.</p>
+        <img class="headshots" src="images/Cody.GIF" alt="Cody Green">
+        <p class="aboutUsParagraph"><b>Cody Green</b></br></br>Cody is a full-time stay at home dad, part-time student, and part-time adult. He is a homebrewer, computer enthusiast, and a fan of games from board to computer. In a zombie apocalypse he would want the rock as his one thing to have because look at him.</p>
+
       </div>
 
       <div class="aboutUsImg">
-        <img class="headshots" src="images/Cody.GIF" alt="Cody Green" height="200em" width="200em">
-      <p class="aboutUsParagraph"><u><b>Cody Green</b></u></br></br>Cody is a full-time stay at home dad, part-time student, and part-time adult. He is a homebrewer, computer enthusiast, and a fan of games from board to computer. In a zombie apocalypse he would want the rock as his one thing to have because look at him.</p>
-      </div>
-
-      <div class="aboutUsImg">
-        <img class="headshots" src="images/DarcyKnore.jpeg" alt="test" height="200em" width="200em">
-      <p class="aboutUsParagraph"><u><b>Darcy Knore</b></u></br></br>Darcy is a hospital Social Worker at a large healthcare organization in Seattle and is in the process of doing a career pivot into Software Development. She is passionate about helping people get connected to the resources they need. Her zombie apocalypse kit would include duct tape, a tube of mascara, and her bible.</p>
-
+        <img class="headshots" src="images/DarcyKnore2.png" alt="Darcy Knore">
+        <p class="aboutUsParagraph"><b>Darcy Knore</b></br></br>Darcy is a hospital Social Worker at a large healthcare organization in Seattle and is in the process of doing a career pivot into Software Development. She is passionate about helping people get connected to the resources they need. Her zombie apocalypse kit would include duct tape, mascara, and her bible.</p>
       </div>
     </div>
-  </div>
+    </div>
+    <script src="http://vjs.zencdn.net/6.2.8/video.js"></script>
 
-      <script src="http://vjs.zencdn.net/6.2.8/video.js"></script>
-    </body>
+    <footer id = "footer">
 
+
+        <a href="https://twitter.com/StepUpToday1" class="fa fa-twitter" font-size = "22pt"></a>
+        <a href="https://www.facebook.com/1StepUp1/" class="fa fa-facebook"></a>
+
+     <div>
+      <p class= "pfooter" id= "contactTitle">
+      <b><u>Contact Us</u></b>
+      </p>
+      <p class = "pfooter" id="info">
+      <b>Phone : </b>206-555-9012  <b> Email : </b>StepUpToday@StepUp.net  <b> Address :</b> 2901 3rd Ave #300, Seattle, WA 98121</p>
+      </div>
+    </footer>
+  </body>
 </html>
