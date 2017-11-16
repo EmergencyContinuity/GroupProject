@@ -20,36 +20,37 @@
     <a href="aboutUs.html">About Us</a>
     <a href="signup.html">Sign-Up</a>
     <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     </header>
 
 
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
-class="close" title="Close Modal">&times;</span>
+    <!-- The Modal -->
 
-  <form class="modal-content animate" action="index.html">
-    <div class="imgcontainer">
-      <img src="images/test.jpg" alt="Avatar" class="avatar">
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+
+      <form class="modal-content animate" action="index.html">
+        <div class="imgcontainer">
+          <img src="images/test.jpg" alt="StepUp" id="signupImg">
+        </div>
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="uname" required>
+          <label><b>Password</b></label>
+
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit"  action="aboutUs.html" id="loginButton2">Login</button>
+          <!-- <input type="checkbox" checked="checked" placeholder="Remember Me"> -->
+
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+
+      </form>
     </div>
-
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit"  action="index.html">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
 
 
 <div id="body">
@@ -81,21 +82,5 @@ class="close" title="Close Modal">&times;</span>
 </div>
     <script type="text/javascript" src="vol.js">
     </script>
-
-    <footer id = "footer">
-
-
-        <a href="https://twitter.com/StepUpToday1" class="fa fa-twitter" font-size = "22pt"></a>
-        <a href="https://www.facebook.com/1StepUp1/" class="fa fa-facebook"></a>
-
-     <div>
-      <p class= "pfooter" id= "contactTitle">
-      <b><u>Contact Us</u></b>
-      </p>
-      <p class = "pfooter" id="info">
-      <b>Phone : </b>206-555-9012  <b> Email : </b>StepUpToday@StepUp.net  <b> Address :</b> 2901 3rd Ave #300, Seattle, WA 98121</p>
-      </div>
-    </footer>
   </body>
-
 </html>

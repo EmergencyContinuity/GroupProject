@@ -92,7 +92,7 @@ function createDiv() {
     // Added amount
     var pAmount = document.createElement('p');
     pAmount.setAttribute('id', 'pAmount');
-    pAmount.textContent = 'AMOUNT:  ' + allOrganizations[i].address;
+    pAmount.textContent = 'AMOUNT:  ' + allOrganizations[i].amount;
     div.appendChild(pAmount);
 
     var pNeed = document.createElement('p');
