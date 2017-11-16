@@ -20,16 +20,45 @@
         <h1 id="OrgName">StepUp</h1>
         <div id="topnav">
         <a href="index.html">Home</a>
+        <a href="volunteer.html">Volunteer</a>
         <a href="aboutUs.html">About Us</a>
         <a href="signup.html">Sign-Up</a>
         <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
         </div>
 
       </header>
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+
+
+        <form class="modal-content animate" action="index.html">
+          <div class="imgcontainer">
+            <img src="images/test.jpg" alt="StepUp" id="signupImg">
+          </div>
+
+          <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="uname" required>
+            <label><b>Password</b></label>
+
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit"  action="aboutUs.html" id="loginButton2">Login</button>
+            <!-- <input type="checkbox" checked="checked" placeholder="Remember Me"> -->
+
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+
+        </form>
+      </div>
 
     <div id="body">
       <p id="dirTagLine"><b>Step Up - Right now. Helping others. Community of one.</b></p>
       <h1 id="aboutUsHeader">About Us</h1>
+      <p>More than just a motto, Step Up – Right Now is a call to action! Our goal is to be a centralized resource and information hub during national/local, emergency or crisis events.  To connect people, organizations and resources when and where they’re needed most.Our message board application is fed by major government and non-government organizations via a verified posting processes. When you respond to a resource request, the organization is giving you details that let you know exactly what their needs are and what you can do to fill them, whether that’s providing donations monetarily, or providing food or clothing at locally designated drop-off points.</p>
+          <p>We also offer the option for those highly motivated to provide aid, to create a message post giving contact information and listing what resources or services they’re able provide. This information will be available to our verified organizations as an additional resource pool to pull from.</p>
+          <p> Helping others. A community of one. This is something that can’t be overstated. During times of need, ever hand counts. We are committed to providing the best service possible to pull our community together and Step Up to any and every challenge that may arise!</p>
       <div id="aboutUsVideo">
         <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="800em" height="500em"
       poster="images/test.jpg" data-setup="{}">
@@ -56,7 +85,7 @@
 
       <div class="aboutUsImg">
 
-        <img class="headshots" src="images/CodyGreen-8.jpg" alt="Cody Green">
+        <img class="headshots" src="images/Cody.GIF" alt="Cody Green">
         <p class="aboutUsParagraph"><b>Cody Green</b></br></br>Cody is a full-time stay at home dad, part-time student, and part-time adult. He is a homebrewer, computer enthusiast, and a fan of games from board to computer. In a zombie apocalypse he would want the rock as his one thing to have because look at him.</p>
 
       </div>
@@ -68,5 +97,20 @@
     </div>
     </div>
     <script src="http://vjs.zencdn.net/6.2.8/video.js"></script>
+
+    <footer id = "footer">
+
+
+        <a href="https://twitter.com/StepUpToday1" class="fa fa-twitter" font-size = "22pt"></a>
+        <a href="https://www.facebook.com/1StepUp1/" class="fa fa-facebook"></a>
+
+     <div>
+      <p class= "pfooter" id= "contactTitle">
+      <b><u>Contact Us</u></b>
+      </p>
+      <p class = "pfooter" id="info">
+      <b>Phone : </b>206-555-9012  <b> Email : </b>StepUpToday@StepUp.net  <b> Address :</b> 2901 3rd Ave #300, Seattle, WA 98121</p>
+      </div>
+    </footer>
   </body>
 </html>
