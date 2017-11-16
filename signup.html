@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <html>
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>STEP UP</title>
@@ -10,25 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Bevan|Concert+One|Freckle+Face|Fredericka+the+Great|Orbitron|Ribeye+Marrow|Special+Elite" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Cabin+Sketch|Caveat|Dosis|Gloria+Hallelujah|Handlee|Indie+Flower|Kalam|Kaushan+Script|Permanent+Marker|Rancho|The+Girl+Next+Door" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
-    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-    <!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
   </head>
   <body>
     <header>
-    <h1 id="OrgName"> StepUp</h1>
-    <div class="topnav" id="myTopnav">
-    <a href="index.html">Home</a>
-    <a href="aboutUs.html">About Us</a>
-    <a href="signup.html">Sign-Up</a>
-    <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+      <h1 id="OrgName">StepUp</h1>
+      <div id="topnav">
+      <a href="index.html">Home</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="signup.html">Sign-Up</a>
+      <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+      </div>
     </header>
+
    <div id="body">
-     <p id="signUpIntro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+     <p id="dirTagLine"><b>Step Up - Right now. Helping others. Community of one.</b></p>
+     <p id="directions"><b>Please fill out the application form with all requested details. This information will be used to build your user account for managing your posts(s) and personal information.
+ After you submit the form, you will receive an email for the verification process. We request you set up one organization log-in and use that to create additional user access.
+ </b></p>
     <div id="topStart">
-     <!-- <div id="topStart2"> -->
      <fieldset id="signupForm">
       <form class="signupForm" action="mailto:mbrown488@gmail.com">
         <legend id= "signupformtitle" >Sign Up!</legend>
@@ -50,16 +51,28 @@
         <p><label for="description">Description of Organization</label>
         <input name="description" type="text" /></p>
 
-
         <button id="submitSignup" type="click">Sign Up</button>
       </form>
     </fieldset>
-    <!-- </div> -->
-   </div>
+    </div>
   </div>
   <script src="javascript.js"></script>
 
+  <footer id = "footer">
 
+
+      <a href="https://twitter.com/StepUpToday1" class="fa fa-twitter" font-size = "22pt"></a>
+      <a href="https://www.facebook.com/1StepUp1/" class="fa fa-facebook"></a>
+
+   <div>
+    <p class= "pfooter" id= "contactTitle">
+    <b><u>Contact Us</u></b>
+    </p>
+    <p class = "pfooter" id="info">
+    <b>Phone : </b>206-555-9012  <b> Email : </b>StepUpToday@StepUp.net  <b> Address :</b> 2901 3rd Ave #300, Seattle, WA 98121</p>
+    </div>
+  </footer>
   </body>
+
 
 </html>
