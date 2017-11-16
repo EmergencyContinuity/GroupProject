@@ -1,9 +1,19 @@
 /*HOME PAGE Section*/
-body {
+/*body {
   margin: 0px;
   font-family: 'Cinzel', serif;
   font-size: 20px;
+}*/
+html, body {
+ background-color: #fbf3eb;
+
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ margin: 0px;
 }
+
 
 /* Add to ALL buttons */
 button {
@@ -23,7 +33,7 @@ header {
   z-index:10;
 }
 
-#body {
+/*#body {
   background-color: #fbf3eb;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -32,7 +42,7 @@ header {
   margin-top: 0px;
   padding-top: 40px;
   padding-bottom: 20px;
-}
+}*/
 
 /*
 font-family: 'Orbitron', sans-serif;
