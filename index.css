@@ -1,9 +1,4 @@
 /*HOME PAGE Section*/
-/*body {
-  margin: 0px;
-  font-family: 'Cinzel', serif;
-  font-size: 20px;
-}*/
 
 html, body {
  background-color: #fbf3eb;
@@ -15,6 +10,14 @@ html, body {
  -o-background-size: cover;
  background-size: cover;
  margin: 0px;
+}
+#Loginname {
+  display: inline-flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 11px;
+  margin-top: auto;
+  visibility: hidden;
 }
 
 /* Add to ALL buttons */
@@ -35,39 +38,6 @@ header {
   z-index:10;
 }
 
-/*#body {
-  background-color: #fbf3eb;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100%;
-  margin-top: 0px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}*/
-
-/*
-font-family: 'Orbitron', sans-serif;
-font-family: 'Concert One', cursive;
-font-family: 'Audiowide', cursive;
-font-family: 'Bevan', cursive;
-font-family: 'Special Elite', cursive;***MAYBE
-font-family: 'Freckle Face', cursive;
-font-family: 'Ribeye Marrow', cursive;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'Dosis', sans-serif;*MAYBE
-font-family: 'Gloria Hallelujah', cursive;***MAYBE
-font-family: 'Permanent Marker', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Kalam', cursive;
-font-family: 'Caveat', cursive;
-font-family: 'Handlee', cursive;
-font-family: 'Architects Daughter', cursive;
-font-family: 'Cabin Sketch', cursive;***MAYBE
-font-family: 'Rancho', cursive;***MAYBE
-font-family: 'Annie Use Your Telescope', cursive;
-font-family: 'The Girl Next Door', cursive;*/
 
 #OrgName {
   font-family: 'Rancho', cursive;
