@@ -17,7 +17,6 @@ html, body {
  margin: 0px;
 }
 
-
 /* Add to ALL buttons */
 button {
   font-family: 'Cinzel', serif;
@@ -260,39 +259,26 @@ span.psw {
   }
 }
 
-#dirTagLine {
+#TagLine {
   text-align: center;
   font-size: 40px;
+  margin-top: 50px;
 }
 
-#directions {
-  font-size: 20px;
-  width: 800px;
-  height: 80px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px;
+p#pageTitle {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
-#directions1 {
+
+p#homeDirections {
   font-size: 20px;
   width: 800px;
-  height: 80px;
-  text-align: left;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-}
-#aboutUsDirections {
-  font-size: 20px;
-  width: 800px;
-  height: 80px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 300px;
-  padding-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #papa {
@@ -355,7 +341,7 @@ span.psw {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   radius: 10px;
 }
 
@@ -430,10 +416,44 @@ footer {
   margin-right: 30px;
 }
 
+/*VOLUNTEER Section*/
+#volunteerDirections {
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#volunteerFormButton {
+  height: auto;
+  width: auto;
+  background-color: #c7293a;
+  color: white;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-top: 5px;
+  float: right;
+}
+
 /*ABOUT US Section*/
 #aboutUsHeader {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
+}
+
+p#aboutUsDirections {
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #aboutUsVideo {
@@ -443,10 +463,6 @@ footer {
   border: 7px solid #807264;
   width: 800px;
   radius: 10px;
-}
-
-#aboutUsTagLine {
-  text-align: center;
 }
 
 #aboutUsPics {
@@ -470,10 +486,13 @@ footer {
 }
 
 .aboutUsParagraph {
-  width: 200px;
-  padding-left: 10px;
-  height: 200px;
+  height: auto;
+  width: 220px;
   text-align: center;
+  padding-left: 100px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /****THIS IS THE SIGN-UP FORM SECTION****/
@@ -482,6 +501,16 @@ p#signUpIntro {
   margin-left: auto;
   margin-right: auto;
   text-decoration: bold;
+}
+
+p#signupDirections {
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #topStart {
