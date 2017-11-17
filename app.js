@@ -77,13 +77,9 @@ function createDiv() {
     div.setAttribute('class', 'baby');
     var babyButton = document.createElement('a');
     babyButton.setAttribute('id', 'babyButton');
-<<<<<<< HEAD
-    babyButton.setAttribute('href','https://www.paypal.com/donate/?token=lCxyAUCKWYMaPFjkon0BGfv5co6jhEnqOH11ZH_SsMgdDrCAu34ib96utBMMdDhvaUW8EG&country.x=US&locale.x=US');
-    
+    babyButton.setAttribute('href','https://www.paypal.com/donate/?token=lCxyAUCKWYMaPFjkon0BGfv5co6jhEnqOH11ZH_SsMgdDrCAu34ib96utBMMdDhvaUW8EG&country.x=US&locale.x=US');  
     babyButton.setAttribute('target','_blank');
-=======
-    
->>>>>>> 6a5417f8f738d7d9e0c825ad0ca9371ceb95ca61
+
     babyButton.textContent = 'I want to Help!';
     div.appendChild(babyButton);
     var pName = document.createElement('p');
