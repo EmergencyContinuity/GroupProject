@@ -7,32 +7,17 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 };
-// var uname = document.getElementById('uname').addEventListener(click,'password');
-// uname.textContent = 'uname';
 
-// var psw = document.getElementById('psw').addEventListener(click,'passWord');
-//
-// function passWord() {
-//   var testV = 1;
-//   if(psw.input = 'password'){
-//     while (testV < 3) {
-//       if (!pass1)
-//         history.go(-1);
-//       if (pass1.toLowerCase() == 'password') {
-//         alert('Access Granted!');
-//         window.open('index.html');
-//         break;
-//       }
-//       testV += 1;
-//       var pass1 =
-//     prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-//     }
-//     if (pass1.toLowerCase() != 'password' & testV == 3)
-//       history.go(-1);
-//     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-//     return '';
-//   }
-// }
+var psw = document.getElementById('loginForm').addEventListener('submit',checkPassword);
+function checkPassword() {
+  var passw = 'password';
+  if(loginForm.psw.value.toLowerCase() === passw){
+    event.preventDefault();
+    var loginName = document.getElementById('Loginname');
+    loginName.style.visibility = 'visible';
+    modal.style.visibility = 'hidden';
+  }
+};
 
 var allOrganizations = [];
 console.log(allOrganizations);
