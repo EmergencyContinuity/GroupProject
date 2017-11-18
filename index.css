@@ -13,7 +13,7 @@ html, body {
 }
 #Loginname {
   display: inline-flex;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-right: 10%;
   padding-top: 11px;
   margin-top: auto;
@@ -439,8 +439,8 @@ p#aboutUsDirections {
   width: 100%;
   height: 600px;
   display: inline-flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15%;
+  margin-right: 15%;
   padding-top: 60px;
 }
 
