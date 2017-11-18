@@ -1,12 +1,10 @@
 /*HOME PAGE Section*/
-/*body {
-  margin: 0px;
-  font-family: 'Cinzel', serif;
-  font-size: 20px;
-}*/
+
 html, body {
  background-color: #fbf3eb;
-
+ margin: 0px;
+ font-family: 'Cinzel', serif;
+ font-size: 20px;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
@@ -16,13 +14,12 @@ html, body {
 
 #Loginname {
   display: inline-flex;
-  margin-left: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 11px;
   margin-top: auto;
   visibility: hidden;
 }
-
-
 /* Add to ALL buttons */
 button {
   font-family: 'Cinzel', serif;
@@ -41,39 +38,6 @@ header {
   z-index:10;
 }
 
-/*#body {
-  background-color: #fbf3eb;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100%;
-  margin-top: 0px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}*/
-
-/*
-font-family: 'Orbitron', sans-serif;
-font-family: 'Concert One', cursive;
-font-family: 'Audiowide', cursive;
-font-family: 'Bevan', cursive;
-font-family: 'Special Elite', cursive;***MAYBE
-font-family: 'Freckle Face', cursive;
-font-family: 'Ribeye Marrow', cursive;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'Dosis', sans-serif;*MAYBE
-font-family: 'Gloria Hallelujah', cursive;***MAYBE
-font-family: 'Permanent Marker', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Kalam', cursive;
-font-family: 'Caveat', cursive;
-font-family: 'Handlee', cursive;
-font-family: 'Architects Daughter', cursive;
-font-family: 'Cabin Sketch', cursive;***MAYBE
-font-family: 'Rancho', cursive;***MAYBE
-font-family: 'Annie Use Your Telescope', cursive;
-font-family: 'The Girl Next Door', cursive;*/
 
 #OrgName {
   font-family: 'Rancho', cursive;
@@ -265,19 +229,26 @@ span.psw {
   }
 }
 
-#dirTagLine {
+#TagLine {
   text-align: center;
   font-size: 40px;
+  margin-top: 50px;
 }
 
-#directions {
+p#pageTitle {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+p#homeDirections {
   font-size: 20px;
   width: 800px;
-  height: 80px;
-  text-align: left;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #papa {
@@ -340,7 +311,7 @@ span.psw {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   radius: 10px;
 }
 
@@ -415,10 +386,44 @@ footer {
   margin-right: 30px;
 }
 
+/*VOLUNTEER Section*/
+#volunteerDirections {
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#volunteerFormButton {
+  height: auto;
+  width: auto;
+  background-color: #c7293a;
+  color: white;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-top: 5px;
+  float: right;
+}
+
 /*ABOUT US Section*/
 #aboutUsHeader {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
+}
+
+p#aboutUsDirections {
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #aboutUsVideo {
@@ -428,10 +433,6 @@ footer {
   border: 7px solid #807264;
   width: 800px;
   radius: 10px;
-}
-
-#aboutUsTagLine {
-  text-align: center;
 }
 
 #aboutUsPics {
@@ -455,10 +456,13 @@ footer {
 }
 
 .aboutUsParagraph {
-  width: 200px;
-  padding-left: 10px;
-  height: 200px;
+  height: auto;
+  width: 220px;
   text-align: center;
+  padding-left: 100px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /****THIS IS THE SIGN-UP FORM SECTION****/
@@ -467,6 +471,16 @@ p#signUpIntro {
   margin-left: auto;
   margin-right: auto;
   text-decoration: bold;
+}
+
+p#signupDirections {
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #topStart {

@@ -7,8 +7,8 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 };
-var psw = document.getElementById('loginForm').addEventListener('submit',checkPassword);
 
+var psw = document.getElementById('loginForm').addEventListener('submit',checkPassword);
 function checkPassword() {
   var passw = 'password';
   if(loginForm.psw.value.toLowerCase() === passw){
@@ -79,7 +79,7 @@ function createDiv() {
     // Added amount
     var pAmount = document.createElement('p');
     pAmount.setAttribute('id', 'pAmount');
-    pAmount.textContent = 'AMOUNT:  ' + allOrganizations[i].address;
+    pAmount.textContent = 'AMOUNT:  ' + allOrganizations[i].amount;
     div.appendChild(pAmount);
 
     var pNeed = document.createElement('p');
