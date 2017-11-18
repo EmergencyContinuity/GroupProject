@@ -11,6 +11,7 @@ html, body {
  background-size: cover;
  margin: 0px;
 }
+
 #Loginname {
   display: inline-flex;
   margin-left: 10%;
@@ -19,7 +20,6 @@ html, body {
   margin-top: auto;
   visibility: hidden;
 }
-
 /* Add to ALL buttons */
 button {
   font-family: 'Cinzel', serif;

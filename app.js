@@ -16,8 +16,9 @@ function checkPassword() {
     var loginName = document.getElementById('Loginname');
     loginName.style.visibility = 'visible';
     modal.style.visibility = 'hidden';
+    // .innerHTML = 'Welcome STEP UP Team!';
   }
-};
+}
 
 var allOrganizations = [];
 console.log(allOrganizations);
