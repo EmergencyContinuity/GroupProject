@@ -444,25 +444,30 @@ p#aboutUsDirections {
   padding-top: 60px;
 }
 
+.aboutUsImg {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .headshots {
   display: inline;
   box-shadow: -1px 20px 71px -21px rgba(128, 114, 100, 0.8);
   border: 2px solid #807264;
   width: 200px;
   height: 200px;
-  margin-left: 100px;
+  margin-left: 15%;
+  margin-right: 15%;
   radius: 10px;
-
 }
 
 .aboutUsParagraph {
   height: auto;
   width: 220px;
   text-align: center;
-  padding-left: 100px;
   padding-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 25px;
 }
 
 /****THIS IS THE SIGN-UP FORM SECTION****/
@@ -587,4 +592,13 @@ legend {
 .fa-twitter {
   margin-right: 1%;
   color: #55ACEE;
+}
+
+#contact {
+  font-size: 1.2em;
+}
+
+#anyquestions {
+  font-size: 2em;
+  text-align: center;
 }
