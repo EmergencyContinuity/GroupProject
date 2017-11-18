@@ -1,4 +1,4 @@
-'use strict' ;
+'use strict';
 // Get the modal
 var modal = document.getElementById('id01');
 // When the user clicks anywhere outside of the modal, close it
@@ -45,10 +45,10 @@ function createDiv() {
   for(var i = 0; i < allVolunteers.length; i++) {
     var div = document.createElement('div');
     div.setAttribute('class', 'baby');
-    var babyButton = document.createElement('button');
-    babyButton.setAttribute('id', 'babyButton');
-    babyButton.textContent = 'I want to Help!';
-    div.appendChild(babyButton);
+    // var babyButton = document.createElement('button');
+    // babyButton.setAttribute('id', 'babyButton');
+    // babyButton.textContent = 'I want to Help!';
+    // div.appendChild(babyButton);
     var pName = document.createElement('p');
     pName.setAttribute('id', 'pName');
     pName.textContent = 'Volunteer: ' + allVolunteers[i].name;

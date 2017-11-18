@@ -7,32 +7,17 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 };
-// var uname = document.getElementById('uname').addEventListener(click,'password');
-// uname.textContent = 'uname';
 
-// var psw = document.getElementById('psw').addEventListener(click,'passWord');
-//
-// function passWord() {
-//   var testV = 1;
-//   if(psw.input = 'password'){
-//     while (testV < 3) {
-//       if (!pass1)
-//         history.go(-1);
-//       if (pass1.toLowerCase() == 'password') {
-//         alert('Access Granted!');
-//         window.open('index.html');
-//         break;
-//       }
-//       testV += 1;
-//       var pass1 =
-//     prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-//     }
-//     if (pass1.toLowerCase() != 'password' & testV == 3)
-//       history.go(-1);
-//     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-//     return '';
-//   }
-// }
+var psw = document.getElementById('loginForm').addEventListener('submit',checkPassword);
+function checkPassword() {
+  var passw = 'password';
+  if(loginForm.psw.value.toLowerCase() === passw){
+    event.preventDefault();
+    var loginName = document.getElementById('Loginname');
+    loginName.style.visibility = 'visible';
+    modal.style.visibility = 'hidden';
+  }
+};
 
 var allOrganizations = [];
 console.log(allOrganizations);
@@ -77,13 +62,9 @@ function createDiv() {
     div.setAttribute('class', 'baby');
     var babyButton = document.createElement('a');
     babyButton.setAttribute('id', 'babyButton');
-<<<<<<< HEAD
     babyButton.setAttribute('href','https://www.paypal.com/donate/?token=lCxyAUCKWYMaPFjkon0BGfv5co6jhEnqOH11ZH_SsMgdDrCAu34ib96utBMMdDhvaUW8EG&country.x=US&locale.x=US');
-    
     babyButton.setAttribute('target','_blank');
-=======
-    
->>>>>>> 6a5417f8f738d7d9e0c825ad0ca9371ceb95ca61
+
     babyButton.textContent = 'I want to Help!';
     div.appendChild(babyButton);
     var pName = document.createElement('p');
@@ -97,7 +78,7 @@ function createDiv() {
     // Added amount
     var pAmount = document.createElement('p');
     pAmount.setAttribute('id', 'pAmount');
-    pAmount.textContent = 'AMOUNT:  ' + allOrganizations[i].address;
+    pAmount.textContent = 'AMOUNT:  ' + allOrganizations[i].amount;
     div.appendChild(pAmount);
 
     var pNeed = document.createElement('p');
