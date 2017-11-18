@@ -14,6 +14,14 @@ html, body {
  margin: 0px;
 }
 
+#Loginname {
+  display: inline-flex;
+  margin-left: 50px;
+  padding-top: 11px;
+  margin-top: auto;
+  visibility: hidden;
+}
+
 
 /* Add to ALL buttons */
 button {
